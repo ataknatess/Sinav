@@ -46,7 +46,10 @@ a:active {
 	font-size: 16px;
 	color: #963;
 }
-</style></head>
+</style>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
 
 <body>
 <table width="1907" height="1049" border="0">
@@ -102,8 +105,7 @@ a:active {
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
-    <td colspan="4" class="TELEPOST"><p>Email:info@mercedesbenz.com.tr</p>
-    <p><a href="https://wa.me/message/LTTFJ34XSRDFH1"></a></p></td>
+    <td colspan="4" class="TELEPOST"><p><a href="https://wa.me/message/LTTFJ34XSRDFH1"></a></p></td>
   </tr>
   <tr>
     <td height="165">&nbsp;</td>
@@ -113,12 +115,31 @@ a:active {
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     
-    <td width="58" class="TELEPOST"><p>&nbsp;</p>
-      <p>Tel: 0212 547 87 45</p>
+    <td width="58" class="TELEPOST"><ul id="MenuBar2" class="MenuBarHorizontal">
+      <li><a class="MenuBarItemSubmenu" href="#">&#304;leti&#351;im Numaralar&#305;</a>
+        <ul>
+          <li><a href="#">Tel:0212 547 87 45 </a></li>
+          <li><a href="#">Yedek par&ccedil;a:0212 235 56 87</a></li>
+          <li><a href="#">Yeni Ara&ccedil;lar:0212 412 69 64 </a></li>
+          <li><a href="#">Servis: 0212 523 52 53</a></li>
+        </ul>
+      </li>
+</ul>
+<p>&nbsp;</p>
+      <p>&nbsp;</p>
+<p>&nbsp;</p></td>
+    <td width="105" class="TELEPOST"><ul id="MenuBar3" class="MenuBarHorizontal">
+      <li><a class="MenuBarItemSubmenu" href="#">Eposta</a>
+        <ul>
+          <li><a href="#">info@mercedesbenz.com.tr</a></li>
+          <li><a href="#">emaildestek@hasotomotiv.com.tr</a></li>
+          <li><a href="#">musteridestek@mercedes.com.tr</a></li>
+        </ul>
+      </li>
+</ul>      
     <p>&nbsp;</p></td>
-    <td width="105" class="TELEPOST"><p>Yedek parça:0212 235 56 87</p></td>
-    <td width="118" class="TELEPOST">Yeni Araçlar:0212 412 69 64 </td>
-    <td width="65" class="TELEPOST">Servis: 0212 523 52 53</td>
+    <td width="118" class="TELEPOST">&nbsp;</td>
+    <td width="65" class="TELEPOST">&nbsp;</td>
   </tr>
   <tr>
     <td height="451">&nbsp;</td>
@@ -127,7 +148,7 @@ a:active {
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
-    <td colspan="4"><p class="saat"><marquee align="left" direction="up" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();"Müşteri Temsilcisi Çalışma Saatleri:</marquee></p>
+    <td colspan="4"><p class="saat"><marquee align="left" direction="up" scrollamount="4" onmouseover="this.stop();" onmouseout="this.start();"Müşteri Temsilcisi Çalışma Saatleri:</marquee></p>
       <p class="saat"><a href="https://wa.me/message/LTTFJ34XSRDFH1">Canlı destek için tıklayınız</a></p>
       <table width="275" height="342">
         <tbody>
@@ -161,9 +182,13 @@ a:active {
           </tr>
         </tbody>
       </table>
-    <p>&nbsp;</p></td>
+    <p><img src="logo.gif" width="300" height="300" /></p></td>
   </tr>
 </table>
 <blockquote>&nbsp;</blockquote>
+<script type="text/javascript">
+var MenuBar2 = new Spry.Widget.MenuBar("MenuBar2", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var MenuBar3 = new Spry.Widget.MenuBar("MenuBar3", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
 </body>
 </html>
